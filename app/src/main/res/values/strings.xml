@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Splash</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contDescription">A scrollable item on the staggered list</string>
+    <string name="splash_item">Splash Item</string>
+    <string name="image_item">Image Item</string>
+    <string name="the_status_image">The status image</string>
+    <string name="splash">Splash</string>
+</resources>

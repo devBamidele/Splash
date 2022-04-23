@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/HomeScreen">
+
+    <fragment
+        android:id="@+id/HomeScreen"
+        android:name="com.example.splash.screens.Home"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_HomeScreen_to_BoardingScreen"
+            app:destination="@id/BoardingScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/BoardingScreen"
+        android:name="com.example.splash.screens.Boarding"
+        android:label="Boarding"
+        tools:layout="@layout/fragment_boarding" >
+
+        <action
+            android:id="@+id/action_BoardingScreen_to_MainBody"
+            app:destination="@id/MainBody" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MainBody"
+        android:name="com.example.splash.screens.Body"
+        android:label="Body"
+        tools:layout="@layout/fragment_body"/>
+</navigation>
