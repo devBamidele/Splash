@@ -31,8 +31,8 @@ fun bindImage(imgView: ImageView, imgUrl: String?) {
 
             // Effects that can be applied to the image
             crossfade(true)
-            crossfade(400)
-            transformations(RoundedCornersTransformation(20f))
+            crossfade(600)
+            transformations(RoundedCornersTransformation(25f))
 
             // The loading animation
             placeholder(R.drawable.loading_animation)

@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.splash.adapter.PhotoGridAdapter
 import com.example.splash.databinding.FragmentBodyBinding
 import com.example.splash.viewmodel.SplashViewModel
@@ -24,18 +26,20 @@ class Body : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = FragmentBodyBinding.inflate(inflater)
 
-        // Allows Data Binding to observe LiveData with the lifeCycle of this fragment
-        binding.lifecycleOwner = this
+        binding.apply{
 
-        // Giving the binding access to the SplashViewModel
-        binding.viewModel = viewModel
+            // Allows Data Binding to observe LiveData with the lifeCycle of this fragment
+            lifecycleOwner = this@Body
 
-        // Sets the adapter of the photosGrid RecyclerView
-        binding.photosGrid.adapter = PhotoGridAdapter()
+            // Giving the binding access to the SplashViewModel
+            viewModel = this@Body.viewModel
 
+            // Sets the adapter of the photosGrid RecyclerView
+            photosGrid.adapter = PhotoGridAdapter()
+        }
         return binding.root
     }
 }

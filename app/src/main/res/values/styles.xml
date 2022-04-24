@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- My personalized styles-->
+<resources>
+    <style name="Widget.Splash.Button.OutlinedButton.Icon" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="android:layout_marginEnd">25dp</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+</resources>

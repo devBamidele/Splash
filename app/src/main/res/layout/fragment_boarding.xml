@@ -17,27 +17,38 @@
         android:layout_height="match_parent"
         android:layout_margin="12dp">
 
+        <Button
+            android:id="@+id/textButton"
+            android:onClick="@{() -> boarding.toMain()}"
+            app:icon="@drawable/ic_right_arrow"
+            app:strokeColor="@color/mySecondary"
+            app:strokeWidth="2dp"
+            app:cornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Widget.Splash.Button.OutlinedButton.Icon" />
+
+        <ImageView
+            android:id="@+id/boardingImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flexible_jpg"
+            android:layout_marginTop="-110dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/the_image_for_the_boarding_screen" />
+
         <TextView
             android:id="@+id/Splash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/splash"
+            android:text="Using Unsplash's API to deliver beautiful, high quality images"
+            android:layout_marginBottom="200dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textSize="75sp"/>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/nextScreenButton"
-            android:onClick="@{() -> boarding.toMain()}"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="35dp"
-            android:layout_marginBottom="40dp"
-            android:contentDescription="@string/cont_desc_button"
-            android:src="@drawable/ic_right_arrow"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:textSize="20sp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

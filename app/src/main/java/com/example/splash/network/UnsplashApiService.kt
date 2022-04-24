@@ -19,7 +19,7 @@ const val ACCESS_KEY = "GGHMWCsUFRHVRCL5jHePT2dzymk20ixPeV1bkOXKrZI"
 /**
  * Number of photos to return
  */
-const val COUNT = 20
+const val COUNT = 30
 
 /**
  * Filter photo by Orientation
