@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:contentDescription="@string/contDescription"
-        android:padding="8dp"
+        android:padding="6dp"
         android:scaleType="fitXY"
         app:imageUrl="@{photo.urls.regular}"
         tools:ignore="ImageContrastCheck"

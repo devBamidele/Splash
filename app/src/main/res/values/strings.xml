@@ -10,5 +10,6 @@
     <string name="cont_desc_button">The button that navigates to the next screen</string>
     <string name="home_image">The image for the Home Screen</string>
     <string name="the_image_for_the_boarding_screen">The image for the Boarding screen</string>
-    <string name="bptextone">Using Unsplash\'s API to deliver beautiful, high quality images</string>
+    <string name="board_text">Using Unsplash\'s API to deliver beautiful, free high resolution photos. Powered by creators everywhere.</string>
+    <string name="header_text">Need quality images ?</string>
 </resources>
